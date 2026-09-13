@@ -1,24 +1,60 @@
-🚀 TaskBuddy is a powerful task management app built using ReactJS. It helps users manage daily tasks with ease — add, update, delete, track progress, and clear all tasks with just one click!
+# TaskBuddy
 
-
-➡️ **For a step-by-step guide on how to build this project, watch the full video here:** [https://youtu.be/Q4aB0IgKYx0?si=L_NjJVoZvb7tbFAO]
-
+TaskBuddy is a lightweight task manager built with React and Vite. Add tasks, organize them by priority and category, track completion progress, and keep your list available between browser sessions.
 
 ## Features
 
-- **Add Tasks**: Users can add new tasks to the list.
-- **Update Tasks**: Users can edit the details of existing tasks.
-- **Delete Tasks**: Users can remove tasks from the list.
-- **Clear All Tasks**: Users can clear all tasks with a single click.
-- **Progress Tracker**: Visual representation of the task completion status.
+- Add tasks with a name, priority, and category.
+- Mark tasks as complete or return them to pending.
+- Delete individual tasks or clear the entire list.
+- View total tasks and completion progress.
+- Persist tasks in the browser with `localStorage`.
+- Responsive interface for desktop and mobile screens.
+
+## Tech Stack
+
+- React 19
+- Vite 6
+- JavaScript (ES modules)
+- CSS
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Create a production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
 
 ## Usage
 
-- **Adding Tasks**: Enter task details and click "Add Task" to add a new task.
-- **Updating Tasks**: Click on a task to edit its details.
-- **Deleting Tasks**: Click the trash icon next to a task to delete it.
-- **Clearing All Tasks**: Click the "Clear All Tasks" button to remove all tasks.
-- **Progress Tracker**: View the progress of your tasks in the progress tracker.
+1. Enter a task in the input field.
+2. Choose its priority and category.
+3. Select **Add Task**.
+4. Use the check button to mark a task complete, or the undo button to mark it pending again.
+5. Use the trash button to remove one task, or **Clear All Tasks** to remove every task.
 
-![image](https://github.com/user-attachments/assets/711647da-6702-49f3-9cde-be40719b270c)
+Task data is stored only in the current browser's local storage. Clearing browser storage removes the saved tasks.
 
